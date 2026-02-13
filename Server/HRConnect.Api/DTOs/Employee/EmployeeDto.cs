@@ -10,8 +10,13 @@ namespace HRConnect.Api.DTOs.Employee
         public string PassportNumber { get; set; } = string.Empty;
         public string Gender { get; set; } = string.Empty;
         public string ContactNumber { get; set; } = string.Empty;
+        public string TaxNumber { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public string PhysicalAddress { get; set; } = string.Empty;
+        public string City { get; set; } = string.Empty;
+        public string ZipCode { get; set; } = string.Empty;
+        public bool HasDisability { get; set; }
+        public string? DisabilityDescription { get; set; }
         public DateOnly DateOfBirth { get; set; }
         public DateOnly StartDate { get; set; }
         public string Branch { get; set; } = string.Empty;

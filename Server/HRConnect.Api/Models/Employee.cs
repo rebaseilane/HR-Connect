@@ -1,6 +1,5 @@
 namespace HRConnect.Api.Models
 {
-    
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
@@ -25,11 +24,19 @@ namespace HRConnect.Api.Models
         [StringLength(10)]
         public string ContactNumber { get; set; } = string.Empty;
         [Required]
+        [StringLength(10)]
+        public string TaxNumber { get; set; } = string.Empty;
+        [Required]
         [EmailAddress]
         public string Email { get; set; } = string.Empty;
         [Required]
         public string PhysicalAddress { get; set; } = string.Empty;
         [Required]
+        public string City { get; set; } = string.Empty;
+        [Required]
+        public string ZipCode { get; set; } = string.Empty;
+        public bool HasDisability { get; set; }
+        public string? DisabilityDescription { get; set; }
         public DateOnly DateOfBirth { get; set; }
         [Required]
         public DateOnly StartDate { get; set; }
